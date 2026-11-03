@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NovaTech Lab: tecnologia e inovação para transformar ideias em impacto.">
+    <meta name="theme-color" content="#070b17">
+    <title>NovaTech Lab | Tecnologia que move o futuro</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="visually-hidden-focusable position-absolute top-0 start-0 m-3 p-2 bg-light text-dark rounded-2" href="#conteudo">
+      Pular para o conteúdo
+    </a>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark py-3" aria-label="Navegação principal">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2 fw-semibold" href="#inicio" aria-label="NovaTech Lab, início">
+            <span class="nova-gradient-text fs-3" aria-hidden="true">✦</span>
+            <span>NovaTech <span class="nova-muted">Lab</span></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
+            aria-controls="menu-principal" aria-expanded="false" aria-label="Alternar menu de navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu-principal">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+              <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+              <li class="nav-item"><a class="nav-link" href="#solucoes">Soluções</a></li>
+              <li class="nav-item"><a class="nav-link" href="#indicadores">Indicadores</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+              <li class="nav-item"><a class="nav-link" href="tailwind.html">Explorar Tailwind</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+      <section id="inicio" class="nova-section" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <p class="text-uppercase small fw-semibold nova-gradient-text mb-3">Laboratório de inovação aplicada</p>
+              <h1 id="hero-title" class="display-3 fw-bold lh-1 mb-4">
+                Ideias ousadas,<br><span class="nova-gradient-text">impacto real.</span>
+              </h1>
+              <p class="lead nova-muted mb-4">
+                A NovaTech Lab conecta estratégia, dados e engenharia para criar produtos digitais
+                que tornam o futuro mais simples, humano e possível.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <button class="btn btn-info btn-lg fw-semibold" type="button" data-bs-toggle="modal"
+                  data-bs-target="#conversaModal" aria-controls="conversaModal">
+                  Começar uma conversa
+                </button>
+                <a class="btn btn-outline-light btn-lg" href="#solucoes">Conheça nossas soluções</a>
+              </div>
+              <div class="d-flex flex-wrap gap-2 mt-5" aria-label="Indicadores em destaque">
+                <span class="badge rounded-pill text-bg-dark border border-secondary px-3 py-2">+42 projetos lançados</span>
+                <span class="badge rounded-pill text-bg-dark border border-secondary px-3 py-2">18 setores transformados</span>
+                <span class="badge rounded-pill text-bg-dark border border-secondary px-3 py-2">96% de satisfação</span>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div id="inovacoes-carousel" class="carousel slide carousel-fade nova-glass overflow-hidden"
+                data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false"
+                role="region" aria-roledescription="carrossel" aria-label="Inovações em destaque">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#inovacoes-carousel" data-bs-slide-to="0"
+                    class="active" aria-current="true" aria-label="Inovação 1"></button>
+                  <button type="button" data-bs-target="#inovacoes-carousel" data-bs-slide-to="1"
+                    aria-label="Inovação 2"></button>
+                  <button type="button" data-bs-target="#inovacoes-carousel" data-bs-slide-to="2"
+                    aria-label="Inovação 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" role="group" aria-roledescription="slide"
+                    aria-labelledby="bootstrap-slide-1-title" aria-describedby="bootstrap-slide-1-position bootstrap-slide-1-description" aria-hidden="false">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1000&q=80"
+                      class="d-block w-100" alt="Pesquisadora analisando dados em um laboratório" width="1000" height="700">
+                    <div class="carousel-caption d-block text-start">
+                      <span class="badge text-bg-info mb-2">Saúde conectada</span>
+                      <span id="bootstrap-slide-1-position" class="visually-hidden">Slide 1 de 3</span>
+                      <h2 id="bootstrap-slide-1-title" class="h3">Dados que cuidam melhor</h2>
+                      <p id="bootstrap-slide-1-description" class="mb-0">Inteligência para antecipar decisões e ampliar o acesso à saúde.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" role="group" aria-roledescription="slide"
+                    aria-labelledby="bootstrap-slide-2-title" aria-describedby="bootstrap-slide-2-position bootstrap-slide-2-description" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80"
+                      class="d-block w-100" alt="Placa eletrônica com circuitos iluminados" width="1000" height="700">
+                    <div class="carousel-caption d-block text-start">
+                      <span class="badge text-bg-info mb-2">Tecnologia responsável</span>
+                      <span id="bootstrap-slide-2-position" class="visually-hidden">Slide 2 de 3</span>
+                      <h2 id="bootstrap-slide-2-title" class="h3">Infraestrutura para o futuro</h2>
+                      <p id="bootstrap-slide-2-description" class="mb-0">Produtos digitais eficientes, seguros e feitos para evoluir.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" role="group" aria-roledescription="slide"
+                    aria-labelledby="bootstrap-slide-3-title" aria-describedby="bootstrap-slide-3-position bootstrap-slide-3-description" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80"
+                      class="d-block w-100" alt="Planeta Terra visto do espaço com luzes urbanas" width="1000" height="700">
+                    <div class="carousel-caption d-block text-start">
+                      <span class="badge text-bg-info mb-2">Impacto mensurável</span>
+                      <span id="bootstrap-slide-3-position" class="visually-hidden">Slide 3 de 3</span>
+                      <h2 id="bootstrap-slide-3-title" class="h3">Inovação que chega longe</h2>
+                      <p id="bootstrap-slide-3-description" class="mb-0">Estratégia e engenharia alinhadas para transformar comunidades.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#inovacoes-carousel"
+                  data-bs-slide="prev" aria-label="Slide anterior">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#inovacoes-carousel"
+                  data-bs-slide="next" aria-label="Próximo slide">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+                <button class="btn btn-sm btn-dark position-absolute bottom-0 start-0 m-3"
+                  type="button" data-bs-carousel-toggle aria-pressed="false">
+                  Pausar carrossel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="solucoes" class="nova-section" aria-labelledby="solucoes-title">
+        <div class="container">
+          <p class="text-uppercase small fw-semibold nova-gradient-text mb-2">O que fazemos</p>
+          <h2 id="solucoes-title" class="h1 fw-bold">Soluções para acelerar o novo</h2>
+          <p class="nova-muted col-lg-7">Um ponto de encontro entre visão de negócio, tecnologia e pessoas.</p>
+          <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+            <div class="col">
+              <article class="card h-100 nova-glass text-light border-0">
+                <div class="card-body d-flex flex-column p-4">
+                  <span class="badge rounded-pill text-bg-info align-self-start fs-5 mb-4" aria-hidden="true">◎</span>
+                  <h3 class="h4 card-title">Estratégia digital</h3>
+                  <p class="card-text nova-muted">Mapeamos oportunidades e desenhamos jornadas digitais que conectam negócio e pessoas.</p>
+                  <a class="btn btn-outline-info mt-auto align-self-start" href="#contato">Planejar evolução</a>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card h-100 nova-glass text-light border-0">
+                <div class="card-body d-flex flex-column p-4">
+                  <span class="badge rounded-pill text-bg-info align-self-start fs-5 mb-4" aria-hidden="true">⌁</span>
+                  <h3 class="h4 card-title">Produtos inteligentes</h3>
+                  <p class="card-text nova-muted">Prototipamos e desenvolvemos experiências simples, acessíveis e prontas para crescer.</p>
+                  <a class="btn btn-outline-info mt-auto align-self-start" href="#contato">Criar um produto</a>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card h-100 nova-glass text-light border-0">
+                <div class="card-body d-flex flex-column p-4">
+                  <span class="badge rounded-pill text-bg-info align-self-start fs-5 mb-4" aria-hidden="true">↗</span>
+                  <h3 class="h4 card-title">Dados com propósito</h3>
+                  <p class="card-text nova-muted">Transformamos sinais em decisões claras para gerar impacto positivo e mensurável.</p>
+                  <a class="btn btn-outline-info mt-auto align-self-start" href="#indicadores">Ver resultados</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="indicadores" class="nova-section" aria-labelledby="indicadores-title">
+        <div class="container">
+          <h2 id="indicadores-title" class="h2 fw-bold">Indicadores de impacto</h2>
+          <p class="nova-muted">Iniciativas em andamento, acompanhadas com transparência.</p>
+          <div class="table-responsive nova-glass p-2">
+            <table class="table table-striped table-dark align-middle mb-0">
+              <caption class="text-light px-2">Portfólio de iniciativas da NovaTech Lab</caption>
+              <thead>
+                <tr><th scope="col">Iniciativa</th><th scope="col">Responsável</th><th scope="col">Status</th><th scope="col">Progresso</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Rede Saúde Aberta</th><td>Marina Costa</td><td><span class="badge text-bg-success">Em execução</span></td><td>78%</td></tr>
+                <tr><th scope="row">Mobilidade para todos</th><td>Rafael Lima</td><td><span class="badge text-bg-primary">Piloto</span></td><td>62%</td></tr>
+                <tr><th scope="row">Escola de Dados</th><td>Joana Alves</td><td><span class="badge text-bg-warning">Pesquisa</span></td><td>45%</td></tr>
+                <tr><th scope="row">Energia consciente</th><td>Caio Mendes</td><td><span class="badge text-bg-success">Em execução</span></td><td>88%</td></tr>
+                <tr><th scope="row">Cidades resilientes</th><td>Luiza Rocha</td><td><span class="badge text-bg-secondary">Planejamento</span></td><td>24%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="nova-section" aria-labelledby="contato-title">
+        <div class="container">
+          <h2 id="contato-title" class="h2 fw-bold">Vamos construir o próximo capítulo?</h2>
+          <p class="nova-muted">Fale com nosso time para descobrir o que podemos realizar juntos.</p>
+          <form class="row g-3 needs-validation nova-glass p-4" data-nova-contact-form novalidate>
+            <div class="col-md-6">
+              <label for="nome" class="form-label">Nome completo</label>
+              <input type="text" class="form-control" id="nome" name="nome" autocomplete="name" required>
+              <div class="invalid-feedback">Informe seu nome.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">E-mail profissional</label>
+              <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+              <div class="invalid-feedback">Informe um e-mail válido.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="assunto" class="form-label">Assunto</label>
+              <input type="text" class="form-control" id="assunto" name="assunto" required>
+              <div class="invalid-feedback">Informe um assunto.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="interesse" class="form-label">Tenho interesse em</label>
+              <select class="form-select" id="interesse" name="interesse" required>
+                <option value="" selected disabled>Selecione uma opção</option>
+                <option>Estratégia digital</option><option>Produtos inteligentes</option><option>Dados com propósito</option>
+              </select>
+              <div class="invalid-feedback">Escolha uma área de interesse.</div>
+            </div>
+            <div class="col-12">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+              <div class="invalid-feedback">Conte um pouco sobre seu desafio.</div>
+            </div>
+            <div class="col-12 d-flex flex-wrap gap-3 align-items-center">
+              <button class="btn btn-info fw-semibold" type="submit">Enviar mensagem</button>
+              <div data-nova-form-message aria-live="polite" role="status" class="text-success"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <div class="modal fade" id="conversaModal" tabindex="-1" aria-labelledby="conversaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content text-dark">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="conversaModalLabel">Pronto para começar?</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <p class="mb-0">Vamos entender seu desafio e encontrar um primeiro experimento que faça sentido para sua equipe.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Agora não</button>
+              <a class="btn btn-primary" href="#contato" data-bs-dismiss="modal">Quero conversar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="border-top border-secondary-subtle py-4">
+      <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2">
+        <span class="nova-muted">© 2025 NovaTech Lab</span>
+        <span class="nova-muted">Tecnologia com propósito.</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NovaTech Lab: tecnologia e inovação para transformar ideias em impacto.">
+    <meta name="theme-color" content="#070b17">
+    <title>NovaTech Lab | Explorar com Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <a class="absolute left-4 top-4 z-50 -translate-y-24 rounded-lg bg-cyan-300 px-4 py-2 font-semibold text-slate-950 transition focus:translate-y-0" href="#conteudo">
+      Pular para o conteúdo
+    </a>
+
+    <header class="border-b border-white/10 bg-slate-950/80 backdrop-blur-lg">
+      <nav class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 py-5 lg:px-8" aria-label="Navegação principal">
+        <a class="flex items-center gap-2 text-lg font-semibold" href="index.html" aria-label="NovaTech Lab, página inicial">
+          <span class="nova-gradient-text text-3xl" aria-hidden="true">✦</span>
+          <span>NovaTech <span class="nova-muted">Lab</span></span>
+        </a>
+        <button class="rounded-lg border border-white/20 p-2 text-slate-100 sm:hidden" type="button" data-nova-menu-button
+          aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu de navegação">
+          <span class="block h-0.5 w-6 bg-current"></span>
+          <span class="mt-1.5 block h-0.5 w-6 bg-current"></span>
+          <span class="mt-1.5 block h-0.5 w-6 bg-current"></span>
+        </button>
+        <div id="menu-principal" class="hidden w-full sm:block sm:w-auto">
+          <ul class="flex flex-col gap-3 pt-3 text-sm font-medium sm:flex-row sm:items-center sm:gap-6 sm:pt-0">
+            <li><a class="transition hover:text-cyan-300" href="#inicio">Início</a></li>
+            <li><a class="transition hover:text-cyan-300" href="#solucoes">Soluções</a></li>
+            <li><a class="transition hover:text-cyan-300" href="#indicadores">Indicadores</a></li>
+            <li><a class="transition hover:text-cyan-300" href="#contato">Contato</a></li>
+            <li><a class="text-cyan-300 transition hover:text-cyan-100" href="index.html">Página Bootstrap</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+      <section id="inicio" class="nova-section mx-auto max-w-7xl px-6 lg:px-8" aria-labelledby="hero-title">
+        <div class="grid items-center gap-10 lg:grid-cols-[1fr_0.9fr]">
+          <div>
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] nova-gradient-text">Laboratório de inovação aplicada</p>
+            <h1 id="hero-title" class="max-w-3xl text-5xl font-bold leading-tight tracking-tight sm:text-6xl">Ideias ousadas,<br><span class="nova-gradient-text">impacto real.</span></h1>
+            <p class="nova-muted mt-6 max-w-2xl text-lg leading-8">A NovaTech Lab conecta estratégia, dados e engenharia para criar produtos digitais que tornam o futuro mais simples, humano e possível.</p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <button class="rounded-full bg-cyan-300 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-200" type="button"
+                data-nova-modal-open="conversa-modal" aria-controls="conversa-modal" aria-expanded="false">Começar uma conversa</button>
+              <a class="rounded-full border border-white/30 px-5 py-3 font-semibold transition hover:border-cyan-300 hover:text-cyan-300" href="#solucoes">Conheça nossas soluções</a>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-2" aria-label="Indicadores em destaque">
+              <span class="rounded-full border border-white/15 bg-white/5 px-3 py-2 text-sm">+42 projetos lançados</span>
+              <span class="rounded-full border border-white/15 bg-white/5 px-3 py-2 text-sm">18 setores transformados</span>
+              <span class="rounded-full border border-white/15 bg-white/5 px-3 py-2 text-sm">96% de satisfação</span>
+            </div>
+          </div>
+
+          <div class="nova-glass overflow-hidden" data-nova-carousel role="region" aria-roledescription="carrossel" aria-label="Inovações em destaque">
+            <div class="relative">
+              <article class="is-active" data-nova-slide role="group" aria-roledescription="slide" aria-labelledby="tailwind-slide-1-title" aria-describedby="tailwind-slide-1-position tailwind-slide-1-description" aria-hidden="false">
+                <img class="h-96 w-full object-cover" src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1000&q=80" alt="Pesquisadora analisando dados em um laboratório" width="1000" height="700">
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-6 pt-20">
+                  <span class="mb-2 inline-block rounded-full bg-cyan-300 px-3 py-1 text-xs font-bold text-slate-950">Saúde conectada</span>
+                  <span id="tailwind-slide-1-position" class="sr-only">Slide 1 de 3</span>
+                  <h2 id="tailwind-slide-1-title" class="text-2xl font-bold">Dados que cuidam melhor</h2>
+                  <p id="tailwind-slide-1-description" class="mt-1 text-sm text-slate-200">Inteligência para antecipar decisões e ampliar o acesso à saúde.</p>
+                </div>
+              </article>
+              <article hidden data-nova-slide role="group" aria-roledescription="slide" aria-labelledby="tailwind-slide-2-title" aria-describedby="tailwind-slide-2-position tailwind-slide-2-description" aria-hidden="true">
+                <img class="h-96 w-full object-cover" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80" alt="Placa eletrônica com circuitos iluminados" width="1000" height="700">
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-6 pt-20">
+                  <span class="mb-2 inline-block rounded-full bg-cyan-300 px-3 py-1 text-xs font-bold text-slate-950">Tecnologia responsável</span>
+                  <span id="tailwind-slide-2-position" class="sr-only">Slide 2 de 3</span>
+                  <h2 id="tailwind-slide-2-title" class="text-2xl font-bold">Infraestrutura para o futuro</h2>
+                  <p id="tailwind-slide-2-description" class="mt-1 text-sm text-slate-200">Produtos digitais eficientes, seguros e feitos para evoluir.</p>
+                </div>
+              </article>
+              <article hidden data-nova-slide role="group" aria-roledescription="slide" aria-labelledby="tailwind-slide-3-title" aria-describedby="tailwind-slide-3-position tailwind-slide-3-description" aria-hidden="true">
+                <img class="h-96 w-full object-cover" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80" alt="Planeta Terra visto do espaço com luzes urbanas" width="1000" height="700">
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-6 pt-20">
+                  <span class="mb-2 inline-block rounded-full bg-cyan-300 px-3 py-1 text-xs font-bold text-slate-950">Impacto mensurável</span>
+                  <span id="tailwind-slide-3-position" class="sr-only">Slide 3 de 3</span>
+                  <h2 id="tailwind-slide-3-title" class="text-2xl font-bold">Inovação que chega longe</h2>
+                  <p id="tailwind-slide-3-description" class="mt-1 text-sm text-slate-200">Estratégia e engenharia alinhadas para transformar comunidades.</p>
+                </div>
+              </article>
+              <button class="absolute left-3 top-1/2 rounded-full bg-slate-950/70 px-3 py-2 text-xl" type="button" data-nova-carousel-control="prev" aria-label="Slide anterior">‹</button>
+              <button class="absolute right-3 top-1/2 rounded-full bg-slate-950/70 px-3 py-2 text-xl" type="button" data-nova-carousel-control="next" aria-label="Próximo slide">›</button>
+            </div>
+            <div class="flex items-center justify-center gap-3 border-t border-white/10 p-4">
+              <button class="is-active h-2.5 w-2.5 rounded-full bg-cyan-300" type="button" data-nova-carousel-indicator aria-label="Mostrar inovação 1" aria-current="true"></button>
+              <button class="h-2.5 w-2.5 rounded-full bg-white/40" type="button" data-nova-carousel-indicator aria-label="Mostrar inovação 2" aria-current="false"></button>
+              <button class="h-2.5 w-2.5 rounded-full bg-white/40" type="button" data-nova-carousel-indicator aria-label="Mostrar inovação 3" aria-current="false"></button>
+              <button class="ml-3 rounded-full border border-white/20 px-3 py-1 text-xs" type="button" data-nova-carousel-toggle aria-pressed="false" aria-label="Pausar carrossel">Pausar</button>
+            </div>
+            <p class="sr-only" data-nova-carousel-status aria-live="polite" aria-atomic="true"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="solucoes" class="nova-section mx-auto max-w-7xl px-6 lg:px-8" aria-labelledby="solucoes-title">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] nova-gradient-text">O que fazemos</p>
+        <h2 id="solucoes-title" class="mt-2 text-4xl font-bold">Soluções para acelerar o novo</h2>
+        <p class="nova-muted mt-3 max-w-2xl">Um ponto de encontro entre visão de negócio, tecnologia e pessoas.</p>
+        <div class="mt-8 grid gap-5 md:grid-cols-3">
+          <article class="nova-glass p-6"><span class="text-3xl" aria-hidden="true">◈</span><span class="ml-2 rounded-full bg-cyan-300/15 px-3 py-1 text-xs font-semibold text-cyan-200">Estratégia</span><h3 class="mt-5 text-xl font-bold">Produtos digitais</h3><p class="nova-muted mt-3 leading-7">Da descoberta ao lançamento, desenhamos experiências que resolvem problemas reais.</p><a class="mt-6 inline-block font-semibold text-cyan-300 hover:text-cyan-100" href="#contato">Conhecer abordagem →</a></article>
+          <article class="nova-glass p-6"><span class="text-3xl" aria-hidden="true">⌁</span><span class="ml-2 rounded-full bg-purple-400/15 px-3 py-1 text-xs font-semibold text-purple-200">Dados</span><h3 class="mt-5 text-xl font-bold">Inteligência aplicada</h3><p class="nova-muted mt-3 leading-7">Transformamos sinais dispersos em decisões confiáveis, éticas e acionáveis.</p><a class="mt-6 inline-block font-semibold text-cyan-300 hover:text-cyan-100" href="#indicadores">Ver indicadores →</a></article>
+          <article class="nova-glass p-6"><span class="text-3xl" aria-hidden="true">✣</span><span class="ml-2 rounded-full bg-cyan-300/15 px-3 py-1 text-xs font-semibold text-cyan-200">Engenharia</span><h3 class="mt-5 text-xl font-bold">Plataformas que evoluem</h3><p class="nova-muted mt-3 leading-7">Arquiteturas robustas e acessíveis para sustentar crescimento com segurança.</p><a class="mt-6 inline-block font-semibold text-cyan-300 hover:text-cyan-100" href="#contato">Falar com especialistas →</a></article>
+        </div>
+      </section>
+
+      <section id="indicadores" class="nova-section mx-auto max-w-7xl px-6 lg:px-8" aria-labelledby="indicadores-title">
+        <h2 id="indicadores-title" class="text-3xl font-bold">Projetos em movimento</h2>
+        <div class="nova-glass mt-6 overflow-x-auto">
+          <table class="w-full min-w-[700px] border-collapse text-left text-sm">
+            <caption class="p-5 text-left text-lg font-semibold">Portfólio de inovação aplicada — atualização trimestral</caption>
+            <thead class="bg-white/10 text-cyan-200"><tr><th class="px-5 py-3" scope="col">Iniciativa</th><th class="px-5 py-3" scope="col">Responsável</th><th class="px-5 py-3" scope="col">Status</th><th class="px-5 py-3" scope="col">Progresso</th></tr></thead>
+            <tbody class="divide-y divide-white/10"><tr><th class="px-5 py-4 font-medium" scope="row">Atlas Saúde</th><td class="px-5 py-4">Marina Costa</td><td class="px-5 py-4 text-cyan-300">Em produção</td><td class="px-5 py-4">100%</td></tr><tr class="bg-white/[0.03]"><th class="px-5 py-4 font-medium" scope="row">Verde Vivo</th><td class="px-5 py-4">Rafael Lima</td><td class="px-5 py-4 text-cyan-300">Piloto</td><td class="px-5 py-4">78%</td></tr><tr><th class="px-5 py-4 font-medium" scope="row">Nexo Cidades</th><td class="px-5 py-4">Joana Alves</td><td class="px-5 py-4 text-amber-300">Discovery</td><td class="px-5 py-4">42%</td></tr><tr class="bg-white/[0.03]"><th class="px-5 py-4 font-medium" scope="row">Órbita Fintech</th><td class="px-5 py-4">Caio Mendes</td><td class="px-5 py-4 text-cyan-300">Beta</td><td class="px-5 py-4">91%</td></tr><tr><th class="px-5 py-4 font-medium" scope="row">Conecta Escola</th><td class="px-5 py-4">Luiza Rocha</td><td class="px-5 py-4 text-purple-300">Pesquisa</td><td class="px-5 py-4">26%</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="contato" class="nova-section mx-auto max-w-3xl px-6 lg:px-8" aria-labelledby="contato-title">
+        <h2 id="contato-title" class="text-4xl font-bold" tabindex="-1">Vamos construir o próximo capítulo?</h2>
+        <p class="nova-muted mt-3">Conte um pouco sobre seu desafio. Nossa equipe retorna em até dois dias úteis.</p>
+        <form class="nova-glass mt-8 grid gap-5 p-6 sm:grid-cols-2" data-nova-contact-form>
+          <div><label class="mb-2 block text-sm font-semibold" for="nome">Nome</label><input class="w-full rounded-lg border border-white/20 bg-slate-950/60 px-4 py-3" id="nome" name="nome" type="text" required></div>
+          <div><label class="mb-2 block text-sm font-semibold" for="email">E-mail</label><input class="w-full rounded-lg border border-white/20 bg-slate-950/60 px-4 py-3" id="email" name="email" type="email" required></div>
+          <div><label class="mb-2 block text-sm font-semibold" for="assunto">Assunto</label><input class="w-full rounded-lg border border-white/20 bg-slate-950/60 px-4 py-3" id="assunto" name="assunto" type="text" required></div>
+          <div><label class="mb-2 block text-sm font-semibold" for="interesse">Área de interesse</label><select class="w-full rounded-lg border border-white/20 bg-slate-950/60 px-4 py-3" id="interesse" name="interesse" required><option value="">Selecione uma opção</option><option>Produtos digitais</option><option>Dados e IA</option><option>Engenharia</option></select></div>
+          <div class="sm:col-span-2"><label class="mb-2 block text-sm font-semibold" for="mensagem">Mensagem</label><textarea class="min-h-32 w-full rounded-lg border border-white/20 bg-slate-950/60 px-4 py-3" id="mensagem" name="mensagem" required></textarea></div>
+          <div class="sm:col-span-2"><button class="rounded-full bg-cyan-300 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-200" type="submit">Enviar mensagem</button><div class="mt-3 text-sm text-cyan-200" data-nova-form-message aria-live="polite" role="status" hidden></div></div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 px-6 py-8 text-center text-sm nova-muted"><p>© 2025 NovaTech Lab. Tecnologia com propósito.</p><a class="mt-2 inline-block text-cyan-300" href="index.html">Voltar para a página principal</a></footer>
+
+    <div id="conversa-modal" class="fixed inset-0 z-50 grid place-items-center bg-slate-950/80 p-6" data-nova-modal-backdrop role="dialog" aria-modal="true" aria-labelledby="conversa-modal-title" tabindex="-1" hidden>
+      <div class="nova-glass w-full max-w-lg p-6" role="document">
+        <div class="flex items-start justify-between gap-4"><div><h2 id="conversa-modal-title" class="text-2xl font-bold" data-nova-modal-title>Comece uma conversa</h2><p class="nova-muted mt-2">Um primeiro passo para transformar sua ideia em impacto.</p></div><button class="rounded-lg border border-white/20 px-3 py-1" type="button" data-nova-modal-close aria-label="Fechar janela">×</button></div>
+        <p class="mt-6 leading-7">Nossa equipe pode ajudar a mapear oportunidades, validar hipóteses e construir uma solução que faça sentido para as pessoas.</p>
+        <div class="mt-8 flex justify-end gap-3"><button class="rounded-full border border-white/25 px-4 py-2" type="button" data-nova-modal-close>Agora não</button><a class="rounded-full bg-cyan-300 px-4 py-2 font-semibold text-slate-950" href="#contato" data-nova-modal-close data-nova-modal-navigation="#contato">Quero conversar</a></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

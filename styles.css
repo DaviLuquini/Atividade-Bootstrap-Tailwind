@@ -1,0 +1,86 @@
+:root {
+  color-scheme: dark;
+  --nova-bg: #070b17;
+  --nova-surface: rgba(17, 24, 45, 0.72);
+  --nova-surface-strong: #11182d;
+  --nova-border: rgba(148, 163, 184, 0.2);
+  --nova-text: #f5f7ff;
+  --nova-muted: #a8b3cc;
+  --nova-cyan: #44e6ff;
+  --nova-purple: #a879ff;
+  --nova-gradient: linear-gradient(120deg, var(--nova-cyan), var(--nova-purple));
+  --nova-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  --nova-radius: 1rem;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: var(--nova-text);
+  background:
+    radial-gradient(circle at 8% 0%, rgba(68, 230, 255, 0.14), transparent 30rem),
+    radial-gradient(circle at 92% 18%, rgba(168, 121, 255, 0.13), transparent 32rem),
+    var(--nova-bg);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a { color: var(--nova-cyan); }
+a:hover { color: #b6f7ff; }
+
+::selection { color: var(--nova-bg); background: var(--nova-cyan); }
+
+:where(button, a, input, select, textarea):focus-visible {
+  outline: 3px solid var(--nova-cyan);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px rgba(68, 230, 255, 0.16);
+}
+
+.nova-gradient-text {
+  color: var(--nova-cyan);
+  background: var(--nova-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nova-glass {
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius);
+  background: var(--nova-surface);
+  box-shadow: var(--nova-shadow);
+  backdrop-filter: blur(1rem);
+}
+
+.nova-muted { color: var(--nova-muted); }
+.nova-gradient-border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: var(--nova-gradient) 1;
+}
+.nova-section { padding-block: clamp(3rem, 8vw, 7rem); }
+
+/* Recommended markup: [data-nova-modal], [data-nova-carousel], [data-nova-menu]. */
+[hidden] { display: none !important; }
+
+.nova-modal-open { overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
